@@ -1,0 +1,33 @@
+body {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: red;
+    height: 10vh;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: green;
+    height: fit-content;
+    padding: .5vh;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 50px;
+    background: orange;
+}
+
+.navbar a:hover {
+    background: blue;
+}
