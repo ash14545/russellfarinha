@@ -8,7 +8,7 @@
 
 body {
     background: black;
-    animation: fadeInAnimation ease 1s;
+    animation: fadeInAnimation ease 2s;
 }
 
 @keyframes fadeInAnimation {
