@@ -1,4 +1,20 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    display: block;
+}
+
+
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    background: cornflowerblue;
+}
+
+/*body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -23,14 +39,12 @@ header {
     justify-content: space-between;
 }
 
-/* Logo */
 header div {
     width: 30%;
     padding: 0 3%;
     text-align: center;
 }
 
-/* Navbar */
 header nav {
     background: blue;
     width: 70%;
@@ -53,3 +67,4 @@ header nav a {
 header nav a:hover {
     background: darkslategrey;
 }
+*/
