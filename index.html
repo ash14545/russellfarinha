@@ -9,8 +9,6 @@
 </head>
 
 <body>
-    <div id="particles-js"></div>
-
     <div class="main-container">
         <!-- Header + Navbar-->
         <header>
@@ -39,9 +37,17 @@
         </section>
     </div>
 
+    <canvas class="background"></canvas>
+
     <!-- Load JS -->
-    <script type="text/javascript" src="scripts/particles/particles.min.js"></script>
-    <script type="text/javascript" src="scripts/particles/config.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js">
+    </script>
+
+    <script>
+        window.onload = function () {
+            Particles.init({ selector: '.background' });
+        };
+    </script>
 </body>
 
 </html>
