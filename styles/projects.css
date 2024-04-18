@@ -1,3 +1,8 @@
+/*
+//
+//  Initializer
+//
+*/
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +13,7 @@
 
 body {
     background: black;
-    animation: fadeInAnimation ease 2s;
+    animation: fadeInAnimation ease 1s;
 }
 
 @keyframes fadeInAnimation {
@@ -21,7 +26,12 @@ body {
     }
 }
 
-.home {
+/*
+//
+//  Page background
+//
+*/
+.main {
     background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/header-background.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -34,27 +44,59 @@ body {
     overflow-y: hidden;
 }
 
-.home-container {
+/*
+//
+//  Navbar
+//
+*/
+.navbar {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+    width: fit-content;
+    background: black;
+}
+
+.navbar nav h1 {
+    font-size: 5rem;
+    padding: 1rem;
+    pointer-events: none;
+}
+
+.navbar nav p {
+    display: inline;
+    padding: 0 .5rem
+}
+
+.navbar nav a {
+    text-decoration: none;
+    font-size: max(min(calc(1vw + 1vh), 1.5rem), 1rem);
+    padding: .25rem .75rem;
+}
+
+.navbar nav a:hover {
+    background: white;
+    color: black;
+    transition: ease-in 0.3s;
+}
+
+/*
+//
+//  Main content
+//
+*/
+.main-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}
-
-.home-container h1 {
-    font-size: 5rem;
-    padding: 1rem;
-}
-
-.home-container a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    padding: 5px 30px;
-}
-
-.home-container a:hover {
-    background: white;
-    color: black;
-    transition: ease-in 0.3s;
+    min-width: 375px;
+    user-select: none;
+    height: 100%;
+    width: 100%;
 }
