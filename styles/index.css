@@ -40,20 +40,28 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    min-width: 500px;
+    user-select: none;
 }
 
 .home-container h1 {
     font-size: 5rem;
     padding: 1rem;
+    pointer-events: none;
 }
 
-.home-container a {
+.home-container nav p {
+    display: inline;
+    padding: 0 .5rem
+}
+
+.home-container nav a {
     text-decoration: none;
     font-size: 1.5rem;
-    padding: 5px 30px;
+    padding: 0 .5rem;
 }
 
-.home-container a:hover {
+.home-container nav a:hover {
     background: white;
     color: black;
     transition: ease-in 0.3s;
