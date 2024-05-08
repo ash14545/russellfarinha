@@ -10,6 +10,7 @@
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 body {
@@ -61,7 +62,7 @@ body {
     padding: 0 .5rem;
 }
 
-.title-navitems {
+.title-nav-items {
     display: inline-block;
     background: rgba(0, 0, 0, .5);
     border-radius: 50px;
@@ -99,6 +100,28 @@ body {
     border-radius: 8px;
 }
 
+.container {
+    padding: 2rem;
+    width: 50rem;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+}
+
+.container p {
+    padding: 0.2rem 0;
+    color: rgb(215, 215, 215);
+}
+
+.divider {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    height: 2px;
+    max-width: 15rem;
+    background: rgb(23, 34, 34);
+}
+
 /*
 //
 //  Navbar
@@ -110,6 +133,7 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 0.75rem;
+    overflow: hidden;
 }
 
 .navbar nav #logo {
@@ -119,17 +143,17 @@ body {
 
 .navbar nav p {
     display: inline;
-    padding: 0 .5rem
+    padding: 0 .5rem;
+    pointer-events: none;
 }
 
-.navbar .navitems a {
+.navbar .nav-items a {
     text-decoration: none;
     font-size: 1rem;
-    padding: .25rem .75rem;
-    border-radius: 10px;
+    padding: 100% .75rem;
 }
 
-.navbar .navitems a:hover {
+.navbar .nav-items a:hover {
     background: white;
     color: black;
     transition: ease-in 0.3s;
@@ -146,6 +170,19 @@ body {
 //
 */
 .about {
+    height: 75vh;
+    background: rgb(36, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+//
+//  Experience section
+//
+*/
+.experience {
     height: 100vh;
     background: rgb(36, 54, 54);
     display: flex;
@@ -153,7 +190,43 @@ body {
     align-items: center;
 }
 
-.about-container {
-    background: green;
+.experience-list {
+    padding: 0 1rem;
+}
 
+.experience-list #company {
+    padding: 0.5rem 0;
+}
+
+.experience-list #company h2 {
+    font-size: 1.5rem;
+}
+
+.experience-list #roles {
+    list-style-type: none;
+    display: flex;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.experience-list #roles li {
+    color: rgb(215, 215, 215);
+}
+
+.experience-list #roles li:not(:last-child)::after {
+    padding: 0 0.5rem;
+    content: "/";
+}
+
+/*
+//
+//  Contact section
+//
+*/
+.contact {
+    height: 100vh;
+    background: rgb(36, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
