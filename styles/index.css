@@ -105,6 +105,7 @@ body {
 //
 */
 .navbar nav {
+    background: rgb(22, 22, 22);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -132,6 +133,11 @@ body {
     background: white;
     color: black;
     transition: ease-in 0.3s;
+}
+
+.fixed-navbar {
+    position: sticky;
+    top: 0;
 }
 
 /*
