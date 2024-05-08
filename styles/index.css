@@ -9,6 +9,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -46,31 +47,40 @@ body {
 
 /*
 //
-//  Navbar
+//  Title
 //
 */
-.navbar nav h1 {
+.title nav h1 {
     font-size: 5rem;
     padding: 1rem;
     pointer-events: none;
 }
 
-.navbar nav p {
+.title nav p {
     display: inline;
-    padding: 0 .5rem
+    padding: 0 .5rem;
 }
 
-.navbar nav a {
+.title-navitems {
+    display: inline-block;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 0.5rem 0;
+}
+
+.title nav a {
     text-decoration: none;
     font-size: max(min(calc(1vw + 1vh), 1.5rem), 1rem);
-    padding: .25rem .75rem;
+    padding: 1rem 2rem;
 }
 
-.navbar nav a:hover {
+.title nav a:hover {
     background: white;
     color: black;
     transition: ease-in 0.3s;
 }
+
 
 /*
 //
@@ -85,4 +95,59 @@ body {
     text-align: center;
     min-width: 375px;
     user-select: none;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+/*
+//
+//  Navbar
+//
+*/
+.navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.75rem;
+}
+
+.navbar nav #logo {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.navbar nav p {
+    display: inline;
+    padding: 0 .5rem
+}
+
+.navbar .navitems a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: .25rem .75rem;
+    border-radius: 10px;
+}
+
+.navbar .navitems a:hover {
+    background: white;
+    color: black;
+    transition: ease-in 0.3s;
+}
+
+/*
+//
+//  About section
+//
+*/
+.about {
+    height: 100vh;
+    background: rgb(36, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    background: green;
+
 }
