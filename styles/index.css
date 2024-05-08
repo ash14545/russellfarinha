@@ -82,6 +82,18 @@ body {
     transition: ease-in 0.3s;
 }
 
+/*
+//
+//  Footer content
+//
+*/
+footer {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /*
 //
@@ -110,7 +122,7 @@ body {
 }
 
 .container p {
-    padding: 0.2rem 0;
+    padding: 0.5rem 0;
     color: rgb(215, 215, 215);
 }
 
@@ -229,4 +241,34 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-icons ul {
+    list-style-type: none;
+    padding: 0 2rem;
+}
+
+.contact-icons i {
+    color: #8292a2;
+    font-size: 1.5rem;
+}
+
+.contact-icons #github:hover {
+    color: #0d2636;
+    transition: ease-in 0.2s;
+}
+
+.contact-icons #linkedin:hover {
+    color: #069;
+    transition: ease-in 0.2s;
+}
+
+.contact-icons #instagram:hover {
+    color: #da2d7d;
+    transition: ease-in 0.2s;
 }
