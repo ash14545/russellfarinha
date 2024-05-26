@@ -51,6 +51,10 @@ body {
 //  Title
 //
 */
+.title {
+    width: 100vw;
+}
+
 .title nav h1 {
     font-size: 5rem;
     padding: 1rem;
@@ -68,6 +72,7 @@ body {
     border-radius: 50px;
     overflow: hidden;
     padding: 0.5rem 0;
+    width: fit-content;
 }
 
 .title nav a {
@@ -88,7 +93,7 @@ body {
 //
 */
 footer {
-    height: 10vh;
+    height: 7vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -226,6 +231,47 @@ footer {
 }
 
 .experience-list #roles li:not(:last-child)::after {
+    padding: 0 0.5rem;
+    content: "/";
+}
+
+/*
+//
+//  Projects section
+//
+*/
+.projects {
+    height: 100vh;
+    background: rgb(36, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-list {
+    padding: 0 1rem;
+}
+
+.projects-list #item {
+    padding: 0.5rem 0;
+}
+
+.projects-list #item h2 {
+    font-size: 1.5rem;
+}
+
+.projects-list #description {
+    list-style-type: none;
+    display: flex;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.projects-list #description li {
+    color: rgb(215, 215, 215);
+}
+
+.projects-list #description li:not(:last-child)::after {
     padding: 0 0.5rem;
     content: "/";
 }
