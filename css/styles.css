@@ -39,19 +39,23 @@ body {
 }
 
 .hero-nav {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     background: rgba(0, 0, 0, .5);
     border-radius: 50px;
     overflow: hidden;
-    padding: 0.5rem 0;
     width: fit-content;
+    height: 2rem;
 }
 
 .hero-nav a {
+    display: flex;
+    height: 100%;
     padding: 0.5rem 1rem;
     text-decoration: none;
     color: white;
     font-size: 0.75rem;
+    align-items: center;
 }
 
 .hero-nav a:hover {
@@ -62,7 +66,7 @@ body {
 
 .hero-nav p {
     display: inline;
-    padding: 0 0.1rem;
+    padding: 0 0.5rem;
 }
 
 header {
@@ -123,22 +127,26 @@ footer {
         transform: translateX(-50%) translateY(0);
     }
     40% {
-        transform: translateX(-50%) translateY(-10px);
+        transform: translateX(-50%) translateY(-30px);
     }
     60% {
-        transform: translateX(-50%) translateY(-5px);
+        transform: translateX(-50%) translateY(-15px);
     }
 }
 
 /* Media query for larger screens */
 @media (min-width: 768px) {
+    .hero-nav {
+        height: 2.5rem;
+    }
+
     .hero-content h1 {
         font-size: 5rem;
         padding: 1rem;
     }
 
     .hero-nav a {
-        padding: 1rem 2rem;
+        padding: 1rem 2.5rem;
         font-size: 1.5rem;
     }
 
