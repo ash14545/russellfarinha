@@ -160,6 +160,36 @@ p {
     margin: 0;
 }
 
+.contact-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-icons ul {
+    list-style-type: none;
+    padding: 0 2rem;
+}
+
+.contact-icons i {
+    color: #8292a2;
+    font-size: 1.5rem;
+}
+
+.contact-icons #github:hover {
+    color: #0d2636;
+    transition: ease-in 0.2s;
+}
+
+.contact-icons #linkedin:hover {
+    color: #069;
+    transition: ease-in 0.2s;
+}
+
+.contact-icons #instagram:hover {
+    color: #da2d7d;
+    transition: ease-in 0.2s;
+}
+
 footer {
     background-color: #333;
     color: white;
