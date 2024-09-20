@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="home">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Russell Farinha</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -26,10 +27,12 @@
         </div>
         <div class="scroll-down">Scroll Down</div>
     </div>
-    <header id="header">
-        <nav>
+    <header id="header" class="navbar">
+        <nav >
+            <a href="#home" id="logo"><strong>RF</strong></a>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -48,7 +51,7 @@
                 scraped the surface of the piano's true potential!</p>
         </section>
 
-        <section id="experiences">
+        <section id="experience">
             <h2>Experience</h2>
             <div class="cards">
                 <div class="card">
@@ -85,13 +88,15 @@
 
         <section id="projects">
             <h2>Projects</h2>
-            <div class="card">
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
-            </div>
-            <div class="card">
-                <h3>Project 2</h3>
-                <p>Description of project 2.</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Project 1</h3>
+                    <p>Description of project 1.</p>
+                </div>
+                <div class="card">
+                    <h3>Project 2</h3>
+                    <p>Description of project 2.</p>
+                </div>
             </div>
         </section>
     </main>
@@ -99,6 +104,8 @@
         <p>&copy 2024 Russell Farinha. All rights reserved.</p>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
     <script src="js/particles.js/particles.min.js"></script>
     <script type="text/javascript" src="js/particles.js/particles.js"></script>
 </body>
