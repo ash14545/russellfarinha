@@ -20,6 +20,7 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    user-select: none;
 }
 
 #particles-js {
@@ -79,6 +80,7 @@ header {
     background-color: #333;
     color: white;
     text-align: center;
+    user-select: none;
 }
 
 nav {
@@ -119,7 +121,7 @@ nav ul li a:hover {
 }
 
 main {
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.75);
     padding: 1rem;
 }
 
